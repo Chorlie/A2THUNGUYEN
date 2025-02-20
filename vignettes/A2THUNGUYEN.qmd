@@ -1,0 +1,26 @@
+---
+title: "A2THUNGUYEN"
+vignette: >
+  %\VignetteIndexEntry{A2THUNGUYEN}
+  %\VignetteEngine{quarto::html}
+  %\VignetteEncoding{UTF-8}
+knitr:
+  opts_chunk:
+    collapse: true
+    comment: '#>'
+---
+
+```{r}
+#| label: setup
+library(A2THUNGUYEN)
+
+data(cars)
+
+plot(x=cars$speed, y=cars$dist, xlab="Speed", ylab="Stopping distance")
+
+print("The average speed is")
+mymean(cars$speed)
+
+print("The average stopping distance is")
+mymean(cars$dist)
+```
